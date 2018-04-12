@@ -1,0 +1,37 @@
+<%= form_with(model: predict_datum, local: true) do |form| %>
+  <% if predict_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(predict_datum.errors.count, "error") %> prohibited this predict_datum from being saved:</h2>
+
+      <ul>
+      <% predict_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :image_name %>
+    <%= form.text_field :image_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beautiful_sky %>
+    <%= form.text_field :beautiful_sky %>
+  </div>
+
+  <div class="field">
+    <%= form.label :not_beautiful_sky %>
+    <%= form.text_field :not_beautiful_sky %>
+  </div>
+
+  <div class="field">
+    <%= form.label :other %>
+    <%= form.text_field :other %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

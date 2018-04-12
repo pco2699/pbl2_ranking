@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image_name: MyString
+  beautiful_sky: 1.5
+  not_beautiful_sky: 1.5
+  other: 1.5
+
+two:
+  image_name: MyString
+  beautiful_sky: 1.5
+  not_beautiful_sky: 1.5
+  other: 1.5

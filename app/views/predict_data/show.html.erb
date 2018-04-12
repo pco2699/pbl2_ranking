@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image name:</strong>
+  <%= @predict_datum.image_name %>
+</p>
+
+<p>
+  <strong>Beautiful sky:</strong>
+  <%= @predict_datum.beautiful_sky %>
+</p>
+
+<p>
+  <strong>Not beautiful sky:</strong>
+  <%= @predict_datum.not_beautiful_sky %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @predict_datum.other %>
+</p>
+
+<%= link_to 'Edit', edit_predict_datum_path(@predict_datum) %> |
+<%= link_to 'Back', predict_data_path %>
