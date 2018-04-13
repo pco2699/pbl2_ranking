@@ -1,12 +1,3 @@
 class ApplicationController < ActionController::Base
-  before_filter :basic
-
-  # （略）
-
-  private
-  def basic
-    authenticate_or_request_with_http_basic do |user, pass|
-      user == 'gs' && pass == 'kodama'
-    end
-  end
+  http_basic_authenticate_with :name => "gs", :password => "kodama" if Rails.env == "production"
 end
