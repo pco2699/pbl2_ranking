@@ -67,3 +67,4 @@ gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
 
 gem "asset_sync"
+gem "fog-aws"
